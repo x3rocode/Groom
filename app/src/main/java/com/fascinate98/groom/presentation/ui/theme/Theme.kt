@@ -1,4 +1,4 @@
-package com.fascinate98.groom.presentation.theme
+package com.fascinate98.groom.presentation.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme

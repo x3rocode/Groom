@@ -7,11 +7,6 @@ import dagger.hilt.android.HiltAndroidApp
 import javax.inject.Inject
 
 @HiltAndroidApp
-class GroomApplication : Application(), Configuration.Provider{
-    @Inject
-    lateinit var workerFactory: HiltWorkerFactory
+class GroomApplication : Application(){
 
-    override fun getWorkManagerConfiguration() = Configuration.Builder()
-        .setWorkerFactory(workerFactory)
-        .build()
 }

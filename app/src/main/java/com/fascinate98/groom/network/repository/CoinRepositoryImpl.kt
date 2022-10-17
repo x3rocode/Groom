@@ -1,5 +1,6 @@
 package com.fascinate98.groom.network.repository
 
+import com.fascinate98.groom.di.RepositoryModule
 import com.fascinate98.groom.domain.model.CoinDetail
 import com.fascinate98.groom.domain.model.Coins
 import com.fascinate98.groom.domain.repository.CoinRepository

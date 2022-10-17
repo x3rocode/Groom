@@ -27,4 +27,7 @@ class CoinsDtoMapper: DomainMapper<CoinsDto, Coins> {
         return initial.map { mapToDomainModel(it) }
     }
 
+    fun fromDomainList(initial: List<Coins>): List<CoinsDto>{
+        return initial.map { mapFromDomainModel(it) }
+    }
 }

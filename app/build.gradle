@@ -67,6 +67,7 @@ dependencies {
     // Coroutine Lifecycle Scopes
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1"
+    implementation "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03"
 
     //retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
@@ -79,6 +80,9 @@ dependencies {
     implementation 'androidx.hilt:hilt-navigation-compose:1.0.0'
     implementation 'androidx.hilt:hilt-work:1.0.0'
     kapt ("androidx.hilt:hilt-compiler:1.0.0")
+
+    //ui
+    implementation "com.chargemap.compose:numberpicker:1.0.3"
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
