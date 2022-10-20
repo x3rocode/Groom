@@ -11,11 +11,10 @@ fun RegistScreen(
     viewModel: RegistViewModel = hiltViewModel()
 ) {
     Surface() {
-        val coins = viewModel.coin.value
         
         GroomTheme {
             Surface {
-                Text(text = coins.toString())
+                //Text(text = coins.toString())
             }
         }
     }
