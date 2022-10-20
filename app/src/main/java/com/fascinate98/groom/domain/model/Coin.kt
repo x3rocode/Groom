@@ -1,6 +1,6 @@
 package com.fascinate98.groom.domain.model
 
-data class Coins (
+data class Coin (
     val market: String,
     val korean_name: String,
     val english_name: String,

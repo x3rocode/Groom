@@ -1,12 +1,9 @@
 package com.fascinate98.groom.domain.repository
-
 import com.fascinate98.groom.domain.model.CoinDetail
-import com.fascinate98.groom.domain.model.Coins
+import com.fascinate98.groom.domain.model.Coin
 
 interface CoinRepository {
 
-    // api requests
-    suspend fun getCoins(): List<Coins>
-
-    suspend fun getCoinDetail(market: String): CoinDetail
+    suspend fun getCoins(): List<Coin>
+    suspend fun getCoinDetail(markets: String): CoinDetail
 }

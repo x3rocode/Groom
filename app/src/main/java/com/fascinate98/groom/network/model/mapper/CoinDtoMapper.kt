@@ -1,12 +1,13 @@
-package com.fascinate98.groom.network.model
+package com.fascinate98.groom.network.model.mapper
 
-import com.fascinate98.groom.domain.model.Coins
+import com.fascinate98.groom.domain.model.Coin
 import com.fascinate98.groom.domain.util.DomainMapper
+import com.fascinate98.groom.network.model.CoinDto
 
-class CoinsDtoMapper: DomainMapper<CoinsDto, Coins> {
+class CoinDtoMapper: DomainMapper<CoinDto, Coin> {
 
-    override fun mapToDomainModel(model: CoinsDto): Coins {
-        return Coins(
+    override fun mapToDomainModel(model: CoinDto): Coin {
+        return Coin(
             market = model.market,
             korean_name = model.korean_name,
             english_name = model.english_name,
@@ -14,8 +15,8 @@ class CoinsDtoMapper: DomainMapper<CoinsDto, Coins> {
         )
     }
 
-    override fun mapFromDomainModel(domainModel: Coins): CoinsDto {
-        return CoinsDto(
+    override fun mapFromDomainModel(domainModel: Coin): CoinDto {
+        return CoinDto(
             market = domainModel.market,
             korean_name = domainModel.korean_name,
             english_name = domainModel.english_name,
@@ -23,11 +24,11 @@ class CoinsDtoMapper: DomainMapper<CoinsDto, Coins> {
         )
     }
 
-    fun toDomainList(initial: List<CoinsDto>): List<Coins>{
+    fun toDomainList(initial: List<CoinDto>): List<Coin>{
         return initial.map { mapToDomainModel(it) }
     }
 
-    fun fromDomainList(initial: List<Coins>): List<CoinsDto>{
+    fun fromDomainList(initial: List<Coin>): List<CoinDto>{
         return initial.map { mapFromDomainModel(it) }
     }
 }

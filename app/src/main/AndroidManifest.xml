@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Groom"
         tools:targetApi="31">
-        <activity android:name=".presentation.MainActivity"
+        <activity android:name=".Screen.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

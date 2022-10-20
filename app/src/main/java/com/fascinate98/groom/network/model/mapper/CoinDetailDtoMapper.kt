@@ -1,7 +1,8 @@
-package com.fascinate98.groom.network.model
+package com.fascinate98.groom.network.model.mapper
 
 import com.fascinate98.groom.domain.model.CoinDetail
 import com.fascinate98.groom.domain.util.DomainMapper
+import com.fascinate98.groom.network.model.CoinDetailDto
 
 class CoinDetailDtoMapper: DomainMapper<CoinDetailDto, CoinDetail>{
 

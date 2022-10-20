@@ -1,8 +1,6 @@
 package com.fascinate98.groom.di
 
 import com.fascinate98.groom.network.RetrofitApi
-import com.fascinate98.groom.network.model.CoinDetailDtoMapper
-import com.fascinate98.groom.network.model.CoinsDtoMapper
 import com.google.gson.GsonBuilder
 import dagger.Module
 import dagger.Provides
@@ -15,18 +13,6 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent ::class)
 object NetworkModule {
-
-    @Singleton
-    @Provides
-    fun provideCoinsMapper(): CoinsDtoMapper {
-        return CoinsDtoMapper()
-    }
-
-    @Singleton
-    @Provides
-    fun provideCoinDetailMapper(): CoinDetailDtoMapper {
-        return CoinDetailDtoMapper()
-    }
 
     @Singleton
     @Provides

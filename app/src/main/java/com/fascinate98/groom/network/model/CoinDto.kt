@@ -2,7 +2,7 @@ package com.fascinate98.groom.network.model
 
 import com.google.gson.annotations.SerializedName
 
-data class CoinsDto(
+data class CoinDto(
     @SerializedName("market")
     var market: String,
 

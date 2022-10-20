@@ -1,4 +1,4 @@
-package com.fascinate98.groom.presentation.ui.theme
+package com.fascinate98.groom.Screen.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
