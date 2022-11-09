@@ -13,8 +13,9 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 
-@HiltViewModel
-class RegistViewModel @Inject constructor(
+
+class RegistViewModel  constructor(
+
     private val repository: CoinRepository
 ): ViewModel() {
     var state by mutableStateOf(

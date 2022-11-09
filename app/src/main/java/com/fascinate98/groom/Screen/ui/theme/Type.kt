@@ -9,7 +9,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import com.fascinate98.groom.R
 
-private val BabyFont = FontFamily(
+val BabyFont = FontFamily(
     Font(R.font.baby_font)
 )
 
